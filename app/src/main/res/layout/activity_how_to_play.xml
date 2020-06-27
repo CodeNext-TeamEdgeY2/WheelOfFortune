@@ -4,19 +4,8 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@drawable/wheeloffortunehowtoplay"
     tools:context=".HowToPlayActivity">
-
-    <TextView
-        android:id="@+id/textView2"
-        android:layout_width="185dp"
-        android:layout_height="52dp"
-        android:text="How To Play"
-        android:textSize="24sp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.091" />
 
     <Button
         android:id="@+id/playButton"
@@ -24,37 +13,39 @@
         android:layout_height="wrap_content"
         android:layout_marginStart="16dp"
         android:layout_marginEnd="185dp"
+        android:onClick="openPlayActivity"
         android:text="Play"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toStartOf="@+id/mainButton"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.938"
-        android:onClick="openPlayActivity"/>
+        app:layout_constraintVertical_bias="0.938" />
 
     <Button
         android:id="@+id/mainButton"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:onClick="openMainActivity"
         android:text="Main Menu "
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.92"
         app:layout_constraintStart_toEndOf="@+id/playButton"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.938"
-        android:onClick="openMainActivity"/>
+        app:layout_constraintVertical_bias="0.938" />
 
     <TextView
         android:id="@+id/textView4"
-        android:layout_width="298dp"
-        android:layout_height="366dp"
-        android:text="TextView"
-        android:textSize="18sp"
+        android:layout_width="328dp"
+        android:layout_height="421dp"
+        android:text="How To Play: The Object of the game is to get a perfect score, which means you have to try your best to answer correctly EACH and EVERY time. Once you've reached the perfect score YOU WIN!! And if you don't reach the perfect score then you lose and have to go through the trouble of restarting the app entirely incase you want to play again >:). HAVE FUN!!!"
+        android:textColor="#9C27B0"
+        android:textSize="25sp"
+        android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.495"
+        app:layout_constraintHorizontal_bias="0.493"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView2"
-        app:layout_constraintVertical_bias="0.187" />
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.403" />
 </androidx.constraintlayout.widget.ConstraintLayout>

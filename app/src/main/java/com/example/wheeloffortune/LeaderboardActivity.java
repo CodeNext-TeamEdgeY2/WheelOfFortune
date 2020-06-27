@@ -26,7 +26,7 @@ public class LeaderboardActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_leaderboard);
         database = FirebaseDatabase.getInstance();
-        reference = database.getReference().child("name");
+        reference = database.getReference().child("leaderboard");
         editText = findViewById(R.id.edittextName);
         leadLV = findViewById(R.id.leaderboardLV);
     }
@@ -43,6 +43,10 @@ public class LeaderboardActivity extends AppCompatActivity {
 
     public void addToLeaderBoard(View view) {
         name = editText.getText().toString();
-        nameArrayList.add(name);
+        //nameArrayList.add(name);
+        reference = database.getReference().child("leaderboard");
+        reference.push().setValue(name);
+
     }
+
 }

@@ -9,11 +9,12 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".FoodActivity"></activity>
+        <activity android:name=".WinActivity"></activity>
+        <activity android:name=".FoodActivity" />
         <activity android:name=".LeaderboardActivity" />
-        <activity android:name=".PlayActivity"
-                  android:windowSoftInputMode="adjustPan"
-                    />
+        <activity
+            android:name=".PlayActivity"
+            android:windowSoftInputMode="adjustPan" />
         <activity android:name=".HowToPlayActivity" />
         <activity android:name=".MainActivity">
             <intent-filter>
